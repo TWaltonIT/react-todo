@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+.App {
+  min-height: 90vh;
+  margin-bottom: 0 !important;
+  text-align: center;
+  font-family: Lugrasimo;
+}
+
+body {
+  background-image: url('./assets/dayzforest.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  background-color: rgb(34, 34, 34) !important;
+}
+
+.navigation {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(13, 13, 13, 0.641);
+  z-index: 20000;
+}
+
+.navbar-brand {
+  padding-left: 4em;
+  font-size: 2em !important;
+  background-color: rgba(58, 58, 58, 0.5);
+}
+
+#navLinks {
+  background-color: rgba(58, 58, 58, 0.5);
+}
+
+.navLink {
+  padding-right: 4em;
+  font-size: 24px;
+}
+
+article#dashboard {
+  margin-top: 5em;
+  opacity: .8;
+}
+
+div.createContainer {
+  background-color: rgba(13, 13, 13, 0.95);
+  opacity: .8;
+}
+
+div.createContainer button {
+  transform: scale(.9);
+}
+
+.nav-link:hover {
+  transition: .5s;
+  transform: scale(1.2);
+  color: red !important;
+}
+
+div#aboutMe {
+  margin: 5em;
+  background-color: rgba(58, 58, 58, 0.5);
+}
+
+div#aboutMe p {
+  color: white;
+}
+
+div#aboutBody {
+  background-color: rgba(38, 38, 38, 0.9);
+  width: 80%;
+  overflow: hidden;
+}
+
+div.logout {
+  background-color: rgba(58, 58, 58, 0.5);
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 60%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  position: relative;
+  justify-content: center;
+  height: 400px;
+  width: 500px;
+}
+
+
+footer {
+  position: absolute !important;
+  z-index: 50000;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(13, 13, 13, 0.641);
+  color: rgb(200, 200, 200);
+}

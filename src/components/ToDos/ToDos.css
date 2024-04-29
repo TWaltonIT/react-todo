@@ -1,0 +1,22 @@
+section.toDos {
+    z-index: 10000;
+    position: relative;
+}
+
+div.todoModal {
+    position: absolute;
+    top: 5em;
+}
+
+table#todoTable th {
+    padding-right: 1em;
+}
+
+table#todoTable td {
+    padding: 1em 1em 0;
+    border-right: 1px solid gray;
+}
+
+#todoTable {
+    opacity: 0.8;
+}

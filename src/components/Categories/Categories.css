@@ -1,0 +1,22 @@
+section.categories {
+    z-index: 10000;
+    position: relative;
+}
+
+div.catModal {
+    position: absolute;
+    top: 5em;
+}
+
+table#catTable th {
+    padding-right: 1em;
+}
+
+table#catTable td {
+    padding: 1em 1em 0;
+    border-right: 1px solid gray;
+}
+
+#catTable {
+    opacity: 0.75;
+}
