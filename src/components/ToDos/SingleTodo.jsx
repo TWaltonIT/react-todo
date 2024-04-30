@@ -2,12 +2,15 @@ import axios from "axios";
 import { useState } from "react";
 import { FaEdit, FaTrashAlt } from 'react-icons/fa'
 import ToDoEdit from "./ToDoEdit";
+import { useAuth } from "../../contexts/AuthContext";
 
 export default function SingleTodo({ todo, getToDos }) {
 
     const { toDoId, name, done, category, categoryId } = todo;
 
     const [showEdit, setShowEdit] = useState(false);
+
+    const { currentUser } = useAuth()
 
     const deleteToDo = (id) => {
         if(window.confirm(`Are you sure you want to delete ${name}?`)){
@@ -29,28 +32,29 @@ export default function SingleTodo({ todo, getToDos }) {
     }
 
     return (
-        <>
+        
             <tr>
                 <td><input type="checkbox" checked={done} onChange={handleChange} /></td>
                 <td>{name}</td>
                 <td>{category.catName}</td>
+            {currentUser.email === import.meta.env.VITE_ADMIN_EMAIL &&
                 <td><button onClick={() => setShowEdit(true)} id="editLink" className="m-1 btn btn-primary rounded">
                         <FaEdit />
                     </button>
                     <button onClick={() => deleteToDo(toDoId)} id="deleteLink" className="m-1 btn btn-danger rounded">
                         <FaTrashAlt />
                     </button>
-                    
-                </td>
-            </tr>
+            
             {showEdit &&
                 <ToDoEdit 
-                    showEdit={showEdit}
-                    setShowEdit={setShowEdit}
-                    todo={todo}
-                    getToDos={getToDos}
-                 />
+                showEdit={showEdit}
+                setShowEdit={setShowEdit}
+                todo={todo}
+                getToDos={getToDos}
+                />
             }
-        </>
+            </td>
+            }
+        </tr>
     );
 }

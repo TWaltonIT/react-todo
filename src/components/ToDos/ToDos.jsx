@@ -43,7 +43,7 @@ export default function ToDos() {
                         </>
                     }
                 </div>
-                </div>
+            </div>
         }
         <FilterCat setFilter={setFilter}/>
 
