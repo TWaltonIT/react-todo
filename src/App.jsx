@@ -33,7 +33,7 @@ const images = [snowflake1, snowflake2, snowflake3, snowflake4]
 
     return (
         <div className="App">
-            <Snowfall style={{position: 'fixed',width: '100vw',height: '100vh'}} images={images} radius={[10, 20]} snowflakeCount={150} />
+            <Snowfall style={{position: 'fixed',width: '100vw',height: '100vh'}} images={images} radius={[10, 20]} snowflakeCount={200} />
             <AuthProvider>
                 <Router>
                     <Navigation />

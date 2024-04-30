@@ -18,7 +18,7 @@ export default function Login() {
 
   return (
     <section className="login">
-        <article className="bg-info mb-5 p-5 text-dark">
+        <article id='dashboard' className="bg-dark mb-5 p-5 text-white">
             <h1 className="text-center">Welcome to Thomas' React To Do App!</h1>
         </article>
         <Container>
