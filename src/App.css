@@ -71,6 +71,7 @@ div#aboutMe p {
 div#aboutBody {
   background-color: rgba(38, 38, 38, 0.9);
   width: 80%;
+  min-height: 100%;
   overflow: hidden;
 }
 
