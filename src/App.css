@@ -83,6 +83,10 @@ input[type=checkbox] {
   transform: scale(1.5);
 }
 
+div.todoModal {
+  z-index: 10000;
+}
+
 .video-responsive {
   overflow: hidden;
   padding-bottom: 60%;
